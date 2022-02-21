@@ -1,0 +1,25 @@
+.started {
+  margin-top: 200px;
+
+  &_container {
+    background: $bg-grd;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+  }
+  &_heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &_btn {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .started {
+    margin-top: 50px;
+  }
+}

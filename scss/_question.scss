@@ -1,0 +1,43 @@
+.question {
+  margin-top: 200px;
+
+  &_heading {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &_desc {
+    max-width: 423px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  &_input {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: center;
+  }
+  &_search {
+    display: flex;
+    justify-content: center;
+
+    max-width: 591px;
+    width: 100%;
+    padding: 20px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $gray-color-light;
+  }
+
+  &_plus {
+    transform: translateX(-150%);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .question {
+    margin-top: 50px;
+  }
+}

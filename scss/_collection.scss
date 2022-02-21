@@ -1,0 +1,172 @@
+.collection {
+  margin-top: 200px;
+
+  &_heading {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &_desc {
+    max-width: 423px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  &_style {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 15px;
+  }
+
+  &_item {
+    max-width: 248px;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+  }
+
+  &_item.is-active,
+  &_item:hover {
+    background: $bg-grd;
+  }
+  &_link {
+    color: white;
+  }
+
+  &_gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 389px);
+    grid-gap: 15px 15px;
+    justify-content: space-between;
+    border-radius: 10px;
+  }
+
+  &_card {
+    display: flex;
+    flex-direction: column;
+    max-width: 389px;
+    max-height: 595px;
+    overflow: hidden;
+    padding: 26px;
+    background-color: $gray-color;
+    border-radius: 10px;
+  }
+  &_card.is-active,
+  &_card:hover {
+    background: $gray-color-light;
+  }
+}
+
+.card {
+  &_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 337px;
+    max-height: 380px;
+    overflow: hidden;
+    border-radius: 10px;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &_content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 23px;
+  }
+
+  &_info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    text-align: left;
+  }
+
+  &_price {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+
+  &_class,
+  &_num {
+    color: white;
+  }
+
+  &_btn {
+    font-size: 20px;
+    line-height: calc(30 / 20);
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .collection_gallery {
+    display: grid;
+    justify-content: flex-start;
+    grid-auto-columns: 389px;
+    grid-auto-flow: column;
+    grid-gap: 0 30px;
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding: 1rem;
+    grid-template-columns: unset;
+    cursor: grab;
+  }
+  .collection_gallery::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+  .collection_gallery > * {
+    scroll-snap-align: start;
+  }
+
+  .collection_gallery {
+    position: relative;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+    scroll-behavior: smooth;
+  }
+
+  .collection_gallery {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .collection {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .collection_gallery {
+    grid-auto-columns: 280px;
+    grid-gap: 0 5px;
+  }
+  .collection_style {
+    width: fit-content;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .collection_item {
+    width: fit-content;
+  }
+}

@@ -1,0 +1,43 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $heading-color;
+}
+
+.text-heading {
+  color: $heading-color;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: calc(60 / 50);
+}
+
+.text-heading--medium {
+  color: $heading-color;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(47 / 40);
+}
+
+.text-heading--small {
+  color: $heading-color;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: calc(45 / 30);
+}
+
+.text {
+  color: $gray-color-light;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(30 / 20);
+}
+
+.text--small {
+  color: $gray-color-light;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: calc(22.5 / 15);
+}

@@ -1,0 +1,30 @@
+.partner {
+  margin-top: 150px;
+
+  &_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 30px;
+  }
+
+  &_item {
+    min-width: 290px;
+  }
+
+  &_link {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .partner {
+    margin-top: 50px;
+  }
+  .partner_container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0;
+  }
+}

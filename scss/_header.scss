@@ -1,0 +1,18 @@
+.header {
+  &_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 70px;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  &_search {
+    border-radius: 10px;
+    background-color: $gray-color;
+    padding: 10px;
+    border: none;
+    max-width: 364px;
+    width: 100%;
+  }
+}
